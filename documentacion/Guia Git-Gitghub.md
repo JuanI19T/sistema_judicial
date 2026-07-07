@@ -42,7 +42,8 @@ git push -u origin Isabella-Carrete
 
 Si la rama ya existe en GitHub, simplemente:
 ```bash
-git checkout Juan-Torres        # o Isabella-Carrete
+git checkout Juan-Torres        
+# o Isabella-Carrete
 ```
 
 ---
@@ -57,7 +58,9 @@ Siempre, **antes de tocar código**, traé los últimos cambios de `main` a tu r
 git checkout main
 git pull origin main
 
-git checkout Juan-Torres         # o Isabella-Carrete
+git checkout Juan-Torres         
+# o Isabella-Carrete
+
 git merge main
 ```
 
@@ -75,7 +78,8 @@ git commit -m "Agrego formulario de alta de expediente"
 ### Paso 3 — Subí tu rama a GitHub
 
 ```bash
-git push origin Juan-Torres     # o Isabella-Carrete
+git push origin Juan-Torres     
+# o Isabella-Carrete
 ```
 
 ### Paso 4 — Abrí el Pull Request (PR)
@@ -102,7 +106,8 @@ Una vez que el PR se fusionó a `main`, ambos deben actualizar sus ramas locales
 git checkout main
 git pull origin main
 
-git checkout Juan-Torres         # o Isabella-Carrete
+git checkout Juan-Torres         
+# o Isabella-Carrete
 git merge main
 ```
 
