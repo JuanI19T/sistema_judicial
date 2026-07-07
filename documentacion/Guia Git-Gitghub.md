@@ -1,5 +1,5 @@
 # 🌿 Guía de Trabajo con Git & GitHub
-### Sistema de Gestión Judicial — Isabella Carrette & Juan Torres
+### Sistema de Gestión Judicial — Isabella Carrete & Juan Torres
 
 Esta guía explica paso a paso cómo trabajar con el flujo de ramas y Pull Requests definido para el proyecto.
 
@@ -11,7 +11,7 @@ Esta guía explica paso a paso cómo trabajar con el flujo de ramas y Pull Reque
 |---|---|---|
 | `main` | Rama estable. Solo código testeado y funcionando al 100%. | ❌ Nadie programa directo acá |
 | `Juan-Torres` | Rama de trabajo de Juan | ✅ Juan Torres |
-| `Isabella-Carrette` | Rama de trabajo de Isabella | ✅ Isabella Carrette |
+| `Isabella-Carrete` | Rama de trabajo de Isabella | ✅ Isabella Carrete |
 
 > 🚫 **Regla de oro**: nunca se hacen commits directo en `main`. Todo cambio pasa primero por la rama personal y después por un Pull Request.
 
@@ -36,13 +36,13 @@ git push -u origin Juan-Torres
 
 **Isabella:**
 ```bash
-git checkout -b Isabella-Carrette
-git push -u origin Isabella-Carrette
+git checkout -b Isabella-Carrete
+git push -u origin Isabella-Carrete
 ```
 
 Si la rama ya existe en GitHub, simplemente:
 ```bash
-git checkout Juan-Torres        # o Isabella-Carrette
+git checkout Juan-Torres        # o Isabella-Carrete
 ```
 
 ---
@@ -57,7 +57,7 @@ Siempre, **antes de tocar código**, traé los últimos cambios de `main` a tu r
 git checkout main
 git pull origin main
 
-git checkout Juan-Torres         # o Isabella-Carrette
+git checkout Juan-Torres         # o Isabella-Carrete
 git merge main
 ```
 
@@ -75,13 +75,13 @@ git commit -m "Agrego formulario de alta de expediente"
 ### Paso 3 — Subí tu rama a GitHub
 
 ```bash
-git push origin Juan-Torres     # o Isabella-Carrette
+git push origin Juan-Torres     # o Isabella-Carrete
 ```
 
 ### Paso 4 — Abrí el Pull Request (PR)
 
 1. Entrá a GitHub → pestaña **Pull Requests** → **New Pull Request**.
-2. Base: `main` ← Compare: `Juan-Torres` (o `Isabella-Carrette`).
+2. Base: `main` ← Compare: `Juan-Torres` (o `Isabella-Carrete`).
 3. Escribí un título claro y una breve descripción de **qué** hiciste y **por qué**.
 4. Asigná como revisor a tu compañero/a (Juan revisa a Isabella, e Isabella revisa a Juan).
 
@@ -102,7 +102,7 @@ Una vez que el PR se fusionó a `main`, ambos deben actualizar sus ramas locales
 git checkout main
 git pull origin main
 
-git checkout Juan-Torres         # o Isabella-Carrette
+git checkout Juan-Torres         # o Isabella-Carrete
 git merge main
 ```
 
