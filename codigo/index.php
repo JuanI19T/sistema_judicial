@@ -327,7 +327,7 @@ function formatearFechaCorta($fecha)
 
     <title>Sistema de Gestión Judicial</title>
 
-    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="css/style_index.css">
 
 </head>
 
